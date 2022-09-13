@@ -21,18 +21,19 @@
                 text-align: center;
             }
             .menu {
-    display: flex;              /* Transformation en flexbox */
-    padding:0;                  /* Suppression des marges internes */
-    background-color: #ccc;     /* Ajout de la couleur d'arrière-plan */
-}
-.menu li {
-    list-style-type: none ;       /* Suppression des puces */
-}
-.menu a {
-    display:block;                /* Transformation en block */
-    min-width: 120px;             /* Largeur minimale des liens */
-}
-            
+                display: flex;              /* Transformation en flexbox */
+                padding:0;                  /* Suppression des marges internes */
+                justify-content: center     /* Alignements des liens dans le menu */
+            }
+            .menu li {
+                list-style-type: none ;       /* Suppression des puces */
+            }
+            .menu a {
+                display:block;                /* Transformation en block */
+                min-width: 120px;             /* Largeur minimale des liens */
+                text-decoration: none;        /* Suppression du soulignement */
+            }
+                        
         </style>
     </head>
     <body>
