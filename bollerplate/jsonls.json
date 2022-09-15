@@ -1,0 +1,281 @@
+{
+  "#comment": "",
+  "html": {
+    "@class": "no-js",
+    "@lang": "",
+    "head": {
+      "meta": [
+        {
+          "@charset": "utf-8"
+        },
+        {
+          "@name": "description",
+          "@content": ""
+        },
+        {
+          "@name": "viewport",
+          "@content": "width=device-width, initial-scale=1"
+        },
+        {
+          "@property": "og:title",
+          "@content": ""
+        },
+        {
+          "@property": "og:type",
+          "@content": ""
+        },
+        {
+          "@property": "og:url",
+          "@content": ""
+        },
+        {
+          "@property": "og:image",
+          "@content": ""
+        },
+        {
+          "@name": "theme-color",
+          "@content": "#fafafa"
+        }
+      ],
+      "title": "",
+      "link": [
+        {
+          "@rel": "manifest",
+          "@href": "site.webmanifest"
+        },
+        {
+          "@rel": "apple-touch-icon",
+          "@href": "icon.png"
+        },
+        {
+          "@rel": "stylesheet",
+          "@href": "css/normalize.css"
+        },
+        {
+          "@rel": "stylesheet",
+          "@href": "css/main.css"
+        }
+      ],
+      "#comment": ""
+    },
+    "body": {
+      "header": {
+        "nav": {
+          "ul": {
+            "li": [
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "nav 1"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "nav 2"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "nav 3"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "nav 4"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "nav 5"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "article": [
+        {
+          "header": {
+            "strong": {
+              "h1": "How to code html email Newsletters"
+            },
+            "p": [
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, deserunt soluta earum minus, sit nesciunt saepe asperiores est quia labore accusamus quam! Iste, libero laudantium dolorum omnis commodi atque!",
+              {
+                "a": {
+                  "@href": "/category/technologie",
+                  "#text": "Technologie"
+                }
+              }
+            ],
+            "time": {
+              "@datetime": "2022-09-12T12:00:01",
+              "#text": "Actualisé hier"
+            }
+          },
+          "p": [
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis mollitia repellat debitis repellendus nemo ea obcaecati, aliquid error corrupti vero, quia omnis veritatis porro soluta delectus tenetur provident ipsa labore.",
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore molestiae veritatis illo at sint. Corrupti pariatur unde vel consequuntur saepe, aspernatur illo explicabo deserunt delectus dignissimos assumenda, magni, suscipit aliquam!"
+          ],
+          "cite": "Lorem ipsum dolor sit amet.",
+          "h2": "Tutorial",
+          "section": {
+            "h2": "En complément de cette lecture:"
+          },
+          "ul": {
+            "li": [
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "Element a lire en complément 1"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "Element a lire en complément 2"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "Element a lire en complément 3"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "Element a lire en complément 4"
+                }
+              },
+              {
+                "a": {
+                  "@href": "#",
+                  "#text": "Element a lire en complément 5"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@style": "width: 50%;",
+          "strong": {
+            "p": {
+              "@class": "center",
+              "#text": "TRENDS"
+            }
+          },
+          "hr": "",
+          "p": [
+            "How to Redesign unsplash Using Styled Components",
+            "How to Redesign unsplash Using Styled Components",
+            "How to Redesign unsplash Using Styled Components"
+          ],
+          "br": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "img": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "footer": {
+        "article": [
+          {
+            "nav": {
+              "ul": {
+                "li": [
+                  {
+                    "a": {
+                      "@href": "#",
+                      "#text": "Contact"
+                    }
+                  },
+                  {
+                    "a": {
+                      "@href": "#",
+                      "#text": "Blog"
+                    }
+                  },
+                  {
+                    "a": {
+                      "@href": "#",
+                      "#text": "Politique et confidentialité"
+                    }
+                  },
+                  {
+                    "a": {
+                      "@href": "#",
+                      "#text": "Cookie"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "form": {
+              "@action": "#",
+              "@method": "get",
+              "label": [
+                {
+                  "@for": "email",
+                  "#text": "Email"
+                },
+                {
+                  "@for": "message",
+                  "#text": "message"
+                }
+              ],
+              "input": [
+                {
+                  "@type": "email",
+                  "@name": "email",
+                  "@id": "email"
+                },
+                {
+                  "@type": "text",
+                  "@name": "message",
+                  "@id": "message"
+                },
+                {
+                  "@type": "submit",
+                  "@value": "Envoyer"
+                }
+              ],
+              "br": ""
+            }
+          }
+        ]
+      },
+      "#comment": [
+        "",
+        ""
+      ],
+      "script": [
+        {
+          "@src": "js/vendor/modernizr-3.11.2.min.js"
+        },
+        {
+          "@src": "js/plugins.js"
+        },
+        {
+          "@src": "js/main.js"
+        },
+        "window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;\n    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')",
+        {
+          "@src": "https://www.google-analytics.com/analytics.js",
+          "@async": ""
+        }
+      ]
+    }
+  }
+}
