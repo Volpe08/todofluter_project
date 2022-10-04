@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import "partial/_variable.scss";
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  color: $gris_fonce;
+  font-size: 16px;
+}
+
+
+
+.logo {
+  position: absolute;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding: 10px 4rem;
+  span {
+    position: fixed;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    color: $bleu_clair;
+
+    background-color: $blanc;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid $bleu_clair;
+  }
+}
+
+
+
+.btn {
+  border: 1px solid $blanc;
+  color: $blanc;
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
+.home {
+  min-height: 500px;
+  height: 100vh;
+  padding: 4rem 4rem;
+  box-sizing: border-box;
+  background: $cyan;
+  background: -moz-radial-gradient(center, ellipse cover, $cyan 0%, $bleu_clair 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, $cyan 0%, $bleu_clair 100%);
+  background: radial-gradient(ellipse at center, $cyan 0%, $bleu_clair 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1db', endColorstr='#008da0',GradientType=1 );
+  display: flex;
+  flex-direction: column;
+  .welcome {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: $blanc;
+    h1 {
+      border-bottom: 2px dotted $blanc;
+      margin: 0 0 2rem 0;
+      padding: 0 0 2rem 0;
+      font-size: 3rem;
+    }
+  }
+}
+
+
+.services {
+  padding: 4rem 4rem;
+  h2 {
+    color: $bleu_clair;
+  }
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .service-block {
+    width: 30%;
+    min-width: 280px;
+    margin: 1.5%;
+    box-sizing: border-box;
+    h3 {
+      color: $bleu_clair;
+      text-align: center;
+    }
+    .service-img {
+      background-color: #ccc;
+      height: 150px;
+    }
+  }
+}
+
+
+
+.contacts {
+  padding: 4rem 4rem;
+  background-color: #ddd;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    label {
+      margin: 1rem 0;
+    }
+    input, textarea {
+      border: 1px solid $bleu_clair;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 15rem;
+    }
+    input:focus, textarea:focus {
+      border: 1px solid $blanc;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #00a3ba;
+      color: $blanc;
+    }
+    input[type="submit"] {
+      background-color: $bleu_clair;
+      width: 25%;
+      margin: 1rem auto;
+    }
+  }
+}
+
+
+footer {
+  padding: 1rem 4rem;
+  background-color: $bleu_fonce;
+  color: $bleu_clair;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+
+
+
+

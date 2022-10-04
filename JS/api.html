@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<input type="text" name="" id="code-postal" placeholder="Saisissez votre code postal">
+
+</body>
+<script>
+
+  $(function (){
+      $("#code-postal").onkeyup(function (event){
+          const cp = $(this).val();
+          if(cp.length == 5){
+              $.ajax({
+                  url: './meteo.php',
+                  type : 'GET',
+                  data: 'cp=' + cp,
+
+
+              })
+          }
+      })
+  })
+
+</script>
+</html>
