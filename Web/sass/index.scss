@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 @import "partial/_variable.scss";
+@import "partial/_mixins.scss";
+
+
+.message {
+  padding: 1rem;
+  border: 1px solid;
+  @include square();
+}
+
+.message-error {
+  @extend .message;
+  border-color: $error;
+}
+
+.message-succes {
+  @extend .message;
+  border-color: $succes;
+}
+
 
 html, body {
   padding: 0px;
@@ -10,12 +29,12 @@ html, body {
 }
 
 
-
 .logo {
   position: absolute;
   font-size: 1.6rem;
   line-height: 3rem;
   padding: 10px 4rem;
+
   span {
     position: fixed;
     display: inline-block;
@@ -31,7 +50,6 @@ html, body {
     border: 1px solid $bleu_clair;
   }
 }
-
 
 
 .btn {
@@ -52,14 +70,16 @@ html, body {
   background: -moz-radial-gradient(center, ellipse cover, $cyan 0%, $bleu_clair 100%);
   background: -webkit-radial-gradient(center, ellipse cover, $cyan 0%, $bleu_clair 100%);
   background: radial-gradient(ellipse at center, $cyan 0%, $bleu_clair 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1db', endColorstr='#008da0',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c1db', endColorstr='#008da0', GradientType=1);
   display: flex;
   flex-direction: column;
+
   .welcome {
     margin: auto;
     width: 100%;
     text-align: center;
     color: $blanc;
+
     h1 {
       border-bottom: 2px dotted $blanc;
       margin: 0 0 2rem 0;
@@ -72,9 +92,11 @@ html, body {
 
 .services {
   padding: 4rem 4rem;
+
   h2 {
     color: $bleu_clair;
   }
+
   > ul {
     display: flex;
     flex-wrap: wrap;
@@ -83,15 +105,18 @@ html, body {
     padding: 0;
     margin: 0;
   }
+
   .service-block {
     width: 30%;
     min-width: 280px;
     margin: 1.5%;
     box-sizing: border-box;
+
     h3 {
       color: $bleu_clair;
       text-align: center;
     }
+
     .service-img {
       background-color: #ccc;
       height: 150px;
@@ -100,25 +125,29 @@ html, body {
 }
 
 
-
 .contacts {
   padding: 4rem 4rem;
   background-color: #ddd;
+
   form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
     label {
       margin: 1rem 0;
     }
+
     input, textarea {
       border: 1px solid $bleu_clair;
       padding: 10px;
       border-radius: 5px;
     }
+
     textarea {
       height: 15rem;
     }
+
     input:focus, textarea:focus {
       border: 1px solid $blanc;
       padding: 10px;
@@ -126,6 +155,7 @@ html, body {
       background-color: #00a3ba;
       color: $blanc;
     }
+
     input[type="submit"] {
       background-color: $bleu_clair;
       width: 25%;
