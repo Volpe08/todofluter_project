@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+ul:nth-child(3n+1) {
+  background-color: #004080;
+}
+
+ul:nth-child(3n+2) {
+  background-color: #004d99;
+}
+
+ul:nth-child(3n+3) {
+  background-color: #0059b3;
+}
+
+.message, .message-succes, .message-error {
+  padding: 1rem;
+  border: 1px solid;
+  width: 3em;
+  height: 3em;
+}
+
+.message-error {
+  border-color: #ff0000;
+}
+
+.message-succes {
+  border-color: green;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+
+.logo {
+  position: absolute;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  padding: 10px 4rem;
+}
+.logo span {
+  position: fixed;
+  display: inline-block;
+  top: 10px;
+  left: 10px;
+  color: #008da0;
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #008da0;
+}
+
+.btn {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
+.home {
+  min-height: 500px;
+  height: 100vh;
+  padding: 4rem 4rem;
+  box-sizing: border-box;
+  background: #00c1db;
+  background: -moz-radial-gradient(center, ellipse cover, #00c1db 0%, #008da0 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #00c1db 0%, #008da0 100%);
+  background: radial-gradient(ellipse at center, #00c1db 0%, #008da0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00c1db", endColorstr="#008da0", GradientType=1);
+  display: flex;
+  flex-direction: column;
+}
+.home .welcome {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.home .welcome h1 {
+  border-bottom: 2px dotted #fff;
+  margin: 0 0 2rem 0;
+  padding: 0 0 2rem 0;
+  font-size: 3rem;
+}
+
+.services {
+  padding: 4rem 4rem;
+}
+.services h2 {
+  color: #008da0;
+}
+.services > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.services .service-block {
+  width: 30%;
+  min-width: 280px;
+  margin: 1.5%;
+  box-sizing: border-box;
+}
+.services .service-block h3 {
+  color: #008da0;
+  text-align: center;
+}
+.services .service-block .service-img {
+  background-color: #ccc;
+  height: 150px;
+}
+
+.contacts {
+  padding: 4rem 4rem;
+  background-color: #ddd;
+}
+.contacts form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.contacts form label {
+  margin: 1rem 0;
+}
+.contacts form input, .contacts form textarea {
+  border: 1px solid #008da0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contacts form textarea {
+  height: 15rem;
+}
+.contacts form input:focus, .contacts form textarea:focus {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #00a3ba;
+  color: #fff;
+}
+.contacts form input[type=submit] {
+  background-color: #008da0;
+  width: 25%;
+  margin: 1rem auto;
+}
+
+footer {
+  padding: 1rem 4rem;
+  background-color: #004a54;
+  color: #008da0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/*# sourceMappingURL=index.css.map */

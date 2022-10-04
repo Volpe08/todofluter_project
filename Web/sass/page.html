@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Modifications SASS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="page">
+            <div class="logo"><span>DB</span> Consulting</div>
+            <header class="home">
+                <div class="welcome">
+                    <h1>DB Consulting</h1>
+                    <p>Aidez-nous à vous aider</p>
+                    <p>
+                        <a href="#services" class="btn btn-light">Nos services</a>
+                        <a href="#contacts" class="btn btn-light">Contactez-nous</a>
+                    </p>
+                </div>
+            </header>
+            <main class="services" id="services">
+                <h2>Nos services</h2>
+                <ul>
+                    <li class="service-block">
+                        <div class="service-img"></div>
+                        <h3>Adipiscing elit</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin 
+                            mollis dapibus nulla ac consectetur. Etiam vehicula, ante vel 
+                            interdum accumsan, elit odio gravida tortor, eu faucibus dolor
+                            lacus sed eros. </p>
+                    </li>
+                    <li class="service-block">
+                        <div class="service-img"></div>
+                        <h3>Fusce et sodales lectus</h3>
+                        <p>Fusce et dictum sodales lectus, vitae congue odio. Ut pharetra, 
+                            nibh dictum euismod euismod, est ante tempor justo, non 
+                            elementum nunc elit vel eros. Sed fringilla, lectus molestie 
+                            mollis gravida.</p>
+                    </li>
+                    <li class="service-block">
+                        <div class="service-img"></div>
+                        <h3>Quisque venenatis</h3>
+                        <p>libero lacus tempus est, a congue quam est eget lorem. Vivamus
+                            ultricies eros ligula, eget placerat est fermentum porta. Cras
+                            in facilisis lectus. Aliquam ultricies risus non tortor.</p>
+                    </li>
+                </ul>
+            </main>
+            <div class="contacts" id="contacts">
+                <h2>Contactez-nous</h2>
+                
+                <form method="get">
+                    <label for="nom">Votre nom et votre prénom</label>
+                    <input type="text" name="nom" id="nom">
+                    
+                    <label for="telephone">Votre téléphone</label>
+                    <input type="text" name="telephone" id="telephone">
+                    
+                    <label for="sujet">Sujet de votre message</label>
+                    <input type="text" name="sujet" id="sujet">
+                    
+                    <label for="message">Sujet de votre message</label>
+                    <textarea name="message" id="message"></textarea>
+                    
+                    <input class="btn" type="submit" name="submit" value="Envoyer">
+                </form>
+                
+            </div>
+            <footer>
+                &copy; 2019 Oueb De Veloper | Tous droits réservés
+            </footer>
+        </div>
+    </body>
+</html>
