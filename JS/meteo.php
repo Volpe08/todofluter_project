@@ -1,10 +1,10 @@
 <?php
 
-header(" Content - Type : text / plain ; charset ='utf -8'") ;
+header("Content-Type:text/plain;charset='utf-8'");
 if (isset($_REQUEST['cp'])&&!empty($_REQUEST['cp'])){
     $cp = $_REQUEST['cp'];
     setLocale(LC_TIME,"fr_FR");
-    date_default_timezone_set("Europe / Paris");
+    date_default_timezone_set("Europe/Paris");
     $today=strftime('%A %d %B %y',time());
     $hour = date('H:i:s');
     $meteo = array("cp"=>$cp,
@@ -26,7 +26,7 @@ if (isset($_REQUEST['cp'])&&!empty($_REQUEST['cp'])){
 
 
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

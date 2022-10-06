@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,18 +9,34 @@
 </head>
 <body>
 <input type="text" name="" id="code-postal" placeholder="Saisissez votre code postal">
+<div id="meteo"></div>
 
 </body>
 <script>
 
   $(function (){
-      $("#code-postal").onkeyup(function (event){
+      $("#code-postal").keyup(function(){
           const cp = $(this).val();
           if(cp.length == 5){
               $.ajax({
                   url: './meteo.php',
                   type : 'GET',
                   data: 'cp=' + cp,
+                  dataType: 'json',
+                  success : function(msg){
+                      if (Object.entries(msg).length===0 && msg.constructor === Object){
+                            $("#meteo").html('<b>CP inconnu </b>');
+                      }else{
+                          const jour = msg['jour'];
+                          const heure = msg['heure'];
+                          const meteo = msg['meteo'];
+                          $("#meteo").html('<b> Le '+ jour + ' à ' + heure + '</b> : ' + meteo);
+
+                      }
+                  },
+                  error: function (msg){
+                      console.log('erreur', msg);
+                  }
 
 
               })

@@ -189,6 +189,7 @@ else{ // Méthode POST
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quizz</title>
     <link rel="stylesheet" href="form.css">
+
 </head>
 <body>
 
@@ -196,3 +197,8 @@ else{ // Méthode POST
 <script src="tools.js"></script>
 
 </html>
+
+
+
+
+
