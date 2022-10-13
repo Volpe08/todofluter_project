@@ -1,36 +1,43 @@
-# coding: utf-8 
-
 import socket
-import threading
+import select
 
-class ClientThread(threading.Thread):
+serveur = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+host, port = "127.0.0.1", 9001
+serveur.bind((host, port))
+serveur.listen(4)
+client_connectee = True
+socket_objs = [serveur]
 
-    def __init__(self, ip, port, clientsocket):
 
-        threading.Thread.__init__(self)
-        self.ip = ip
-        self.port = port
-        self.clientsocket = clientsocket
-        print("[+] Nouveau thread pour %s %s" % (self.ip, self.port, ))
 
-    def run(self): 
-   
-        print("Connexion de %s %s" % (self.ip, self.port, ))
 
-        data = self.clientsocket.recv(2048)
-        print("Ouverture du fichier: ", data.decode(), "...")
-        fp = open(data, 'rb')
-        self.clientsocket.send(fp.read())
 
-        print("Client %s %s" % (self.ip, self.port, ) + " déconnecté...")
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-sock.bind(("",1111))
+print("Bienvenue dans le chat!!")
 
-while True:
-    sock.listen(10)
-    print( "En écoute...")
-    (clientsocket, (ip, port)) = sock.accept()
-    newthread = ClientThread(ip, port, clientsocket)
-    newthread.start()
+while client_connectee:
+
+    liste_lu, liste_acce_Ecrit, exception = select.select(socket_objs, [], socket_objs)
+
+    for socket_obj in liste_lu:
+
+        if socket_obj is serveur:
+            client, adresse = serveur.accept()
+            print(f"l'object client socket: {client} - adresse: {adresse}")
+            socket_objs.append(client)
+            print("1 participant a rejoint")
+
+        else:
+            donnees_recus = socket_obj.recv(128).decode("utf-8")
+            if donnees_recus:
+                if ">" in donnees_recus:
+                    print(donnees_recus)
+                    #serveur.send(f"{donnees_recus}".encode("utf-8"))
+
+                else:
+                    print(donnees_recus + " a rejoint le chat")
+
+            else:
+                socket_objs.remove(socket_obj)
+                print("1 participant est deconnecte")
+                print(f"{len(socket_objs) - 1} participants restants")
