@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/GestionTaches" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Python/Djangolic" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/djangolic" vcs="Git" />
   </component>
 </project>

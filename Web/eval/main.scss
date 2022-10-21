@@ -1,0 +1,20 @@
+#svg-skatedeluxe {
+  height: 25px;
+  width: 185px;
+}
+
+.rating {
+  display: flex;
+  .rating__star {
+    width: 20px;
+    height: 20px;
+    fill: transparent;
+    stroke: #1c272c;
+    stroke-width: 1px;
+
+  }
+  .rating__star.starred {
+    fill: orange;
+  }
+}
+
