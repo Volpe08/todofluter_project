@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my widget</title>
+
+    <script>
+        "use strict";
+
+        class MyWidget extends HTMLElement {
+            constructor() {
+                super();
+                this.$ = {};
+                const s = this.attachShadow({mode: "open"});
+                s.innerHTML = "<style >span {color: red;margin -right: 20px;}</style >";
+                const d = document.createElement("span");
+                d.setAttribute("id", "span");
+                s.appendChild(d);
+                this.$.span = d;
+                const i = document.createElement("input");
+                i.setAttribute("type", "text");
+                i.setAttribute("id", "input");
+                s.appendChild(i);
+                this.$.input = i;
+                this.addEventListener("input", this._on_input.bind(this));
+
+                //this.addEventListener("input", this._on_input.bind(this));
+
+            }
+
+            static get observedAttributes() {
+                return ["value"];
+            }
+
+            attributeChangedCallback(name, oldValue, newValue) {
+                if (oldValue != newValue) {
+                    this.value = newValue;
+                }
+            }
+
+
+            _on_input() {
+                this.value = this.$.input.value;
+            }
+
+            get value() {
+                return this._value;
+            }
+
+            set value(v) {
+                if (v != this._value) {
+                    this._value = v;
+                    this.setAttribute('value', v);
+                    this.$.span.textContent = v;
+                    this.$.input.value = v;
+                    this.dispatchEvent(new CustomEvent("value-changed", {bubbles: true}));
+                }
+            }
+
+
+        }
+
+        customElements.define("my-widget", MyWidget);
+    </script>
+</head>
+<body>
+<my-widget value="hello"></my-widget>
+</body>
+</html>
