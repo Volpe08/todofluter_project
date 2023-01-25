@@ -1,0 +1,17 @@
+<a routerLink="/">
+  <h1>My Store</h1>
+</a>
+
+<div class="btn-menu">
+  <a routerLink="/cart" class="button fancy-button">
+    <i class="material-icons">shopping_cart</i>Checkout
+  </a>
+
+  <a routerLink="/login" class="button fancy-button" id="login">
+    <i class="material-icons">login</i>Login
+  </a>
+
+  <a class="button fancy-button hidden" (click)="onLogout()" id="logout">
+    <i class="material-icons">logout</i>logout
+  </a>
+</div>

@@ -6,6 +6,12 @@
     <mapping directory="$PROJECT_DIR$/Python/Djangolic" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Symfony/my_project_directory" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Symfony/project1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Symfony/td2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web/SiteVGS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Web/td1-cypresstest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android/android/androidintent" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android/flutter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/android/flutter_windows_3.3.9-stable/flutter" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/djangolic" vcs="Git" />
   </component>
 </project>
